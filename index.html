@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="first-top">
+            <div class="activeCheck topSame">
+                <p><b>Active</b></p>
+                <div class="buttons">
+                    <div class="sizingOfTop hover right">
+                        <img class="sizing" src="./img/right-svgrepo-com.svg">
+                    </div>
+                    <div class="sizingOfTop hover notRight">
+                        <img class="sizing" src="./img/wrong-svgrepo-com.svg">
+                    </div>
+                    <div class="sizingOfTop turnOff selectedPage">
+                        <img class="sizing" src="./img/turn-off-svgrepo-com.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="seniority topSame sameSize">
+                <p><b>Seniority</b></p>
+                <div class="sizingOfTop input">
+                    <img class="upSizing" src="./img/up-svgrepo-com.svg">
+                </div>
+            </div>
+            <div class="hired-between topSame">
+                <p><b>Hired Between</b></p>
+                <div class="dates">
+                    <div class="from twoInputs date sizingOfTop margin">
+                        <img class="timing" src="./img/table-svgrepo-com.svg">
+                        <p>From</p>
+                    </div>
+                    <div class="to twoInputs date sizingOfTop">
+                        <img class="timing" src="./img/table-svgrepo-com.svg">
+                        <p>To</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Salary topSame sameSize">
+                <p><b>Salary</b></p>
+                <div class="salaryContainer">
+                    <div class="min twoInputs sizingOfTop margin">
+                        <p>Min</p>
+                    </div>
+                    <div class="max twoInputs sizingOfTop">
+                        <p>Max</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sameThing second-top">
+            <div class="top-left flex">
+                <div class="notSquare same">
+                    <p>10</p>
+                    <img class="sizing" src="./img/up-svgrepo-com.svg">
+                </div>
+                <div class="notSquare same">
+                    <img class="sizing" src="./img/eye-svgrepo-com.svg">
+                    <img class="sizing" src="./img/up-svgrepo-com.svg">
+                </div>
+                <div class="notSquare same">
+                    <img class="sizing" src="./img/table-svgrepo-com.svg">
+                    <img class="sizing" src="./img/up-svgrepo-com.svg">
+                </div>
+                <div class="square same">
+                    <img class="sizing" src="./img/reload-symbol-svgrepo-com.svg">
+                </div>
+                <div class="square same">
+                    <img class="sizing" src="./img/reload-svgrepo-com.svg">
+                </div>
+            </div>
+            <div class="top-middle">
+                <div class="search">
+                    <img src="./img/search-svgrepo-com.svg">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="top-right flex">
+                <div class="kifkif same">
+                    <p>Excel</p>
+                    <img class="sizing" src="./img/file-excel-svgrepo-com.svg">
+                </div>
+                <div class="kifkif same">
+                    <p>Create</p>
+                    <img class="sizing" src="./img/plus-svgrepo-com.svg">
+                </div>
+            </div>
+        </div>  
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox">
+                    </th>
+                    <th>
+                        <p>#</p>
+                    </th>
+                    <th>
+                        <div class="headline">
+                            <p>Name <a class="special-icon" href="#">&#8645;</a></p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="headline">
+                            <p>Position <a class="special-icon" href="#">&#8645;</a></p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="headline">
+                            <p>Seniority <a class="special-icon" href="#">&#8645;</a></p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="headline">
+                            <p>Project <a class="special-icon" href="#">&#8645;</a></p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="headline">
+                            <p>Salary <a class="special-icon" href="#">&#8645;</a></p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="headline">
+                            <p>Taxes <a class="special-icon" href="#">&#8645;</a></p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="headline">
+                            <p>Active <a class="special-icon" href="#">&#8645;</a></p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="headline">
+                            <p>Hired Since <a class="special-icon" href="#">&#8645;</a></p>
+                        </div>
+                    </th>
+                    <th>
+                        <p>Actions</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <p>1</p>
+                    </td>
+                    <td>
+                        <p>Emilie Kirlin</p>
+                    </td>
+                    <td>
+                        <a href="#">Orthotist OR Prosthelist</a>
+                    </td>
+                    <td>
+                        <p>assistant</p>
+                    </td>
+                    <td>
+                        <div class="project yellow">
+                            <p>Webshop</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="dollarsBaby">$5,319.00</p>
+                    </td>
+                    <td>
+                        <p class="dollarsBaby">$4,308.39</p>
+                    </td>
+                    <td class="activeTd">
+                        <div class="active red">
+                            <p>&#10006</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>25-09-2015</p>
+                    </td>
+                    <td>
+                        <div class="twoIcons">
+                            <img src="./img/edit-svgrepo-com.svg">
+                            <img src="./img/delete-svgrepo-com.svg">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <p>2</p>
+                    </td>
+                    <td class="name">
+                        <p>Majory Franecki PhD</p>
+                    </td>
+                    <td>
+                        <a href="#">Boilermaker</a>
+                    </td>
+                    <td>
+                        <p>senior</p>
+                    </td>
+                    <td>
+                        <div class="project green">
+                            <p>Enso SPA</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$2,833.00</p>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$2,294.73</p>
+                    </td>
+                    <td>
+                        <div class="active green">
+                            <p>&#10004</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>21-06-2017</p>
+                    </td>
+                    <td>
+                        <div class="twoIcons">
+                            <img src="./img/edit-svgrepo-com.svg">
+                            <img src="./img/delete-svgrepo-com.svg">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <p>3</p>
+                    </td>
+                    <td>
+                        <p>Barry Brown</p>
+                    </td>
+                    <td>
+                        <a href="#">Motorboat Mechanic</a>
+                    </td>
+                    <td>
+                        <p>staff</p>
+                    </td>
+                    <td>
+                        <div class="project green">
+                            <p>Enso SPA</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$1,106.00</p>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$895.86</p>
+                    </td>
+                    <td class="activeTd">
+                        <div class="active green">
+                            <p>&#10004</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>03-01-2018</p>
+                    </td>
+                    <td>
+                        <div class="twoIcons">
+                            <img src="./img/edit-svgrepo-com.svg">
+                            <img src="./img/delete-svgrepo-com.svg">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <p>4</p>
+                    </td>
+                    <td>
+                        <p>Lara Renner MD</p>
+                    </td>
+                    <td>
+                        <a href="#">Recreation Worker</a>
+                    </td>
+                    <td>
+                        <p>staff</p>
+                    </td>
+                    <td>
+                        <div class="project blue">
+                            <p>AdminLTE</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$2,655.00</p>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$2,150.55</p>
+                    </td>
+                    <td class="activeTd">
+                        <div class="active green">
+                            <p>&#10004</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>23-08-2016</p>
+                    </td>
+                    <td>
+                        <div class="twoIcons">
+                            <img src="./img/edit-svgrepo-com.svg">
+                            <img src="./img/delete-svgrepo-com.svg">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <p>5</p>
+                    </td>
+                    <td>
+                        <p>Moises Kihn</p>
+                    </td>
+                    <td>
+                        <a href="#">Audiologist</a>
+                    </td>
+                    <td>
+                        <p>associate</p>
+                    </td>
+                    <td>
+                        <div class="project blue">
+                            <p>AdminLTE</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$4,908.00</p>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$3,975.48</p>
+                    </td>
+                    <td class="activeTd">
+                        <div class="active red">
+                            <p>&#10006</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>02-09-2015</p>
+                    </td>
+                    <td>
+                        <div class="twoIcons">
+                            <img src="./img/edit-svgrepo-com.svg">
+                            <img src="./img/delete-svgrepo-com.svg">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <p>6</p>
+                    </td>
+                    <td>
+                        <p>Barry Brown</p>
+                    </td>
+                    <td>
+                        <a href="#">Motorboat Mechanic</a>
+                    </td>
+                    <td>
+                        <p>staff</p>
+                    </td>
+                    <td>
+                        <div class="project green">
+                            <p>Enso SPA</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$1,106.00</p>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$895.86</p>
+                    </td>
+                    <td class="activeTd">
+                        <div class="active green">
+                            <p>&#10004</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>03-01-2018</p>
+                    </td>
+                    <td>
+                        <div class="twoIcons">
+                            <img src="./img/edit-svgrepo-com.svg">
+                            <img src="./img/delete-svgrepo-com.svg">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <p>7</p>
+                    </td>
+                    <td>
+                        <p>Lillie Ondricka</p>
+                    </td>
+                    <td class="position">
+                        <a href="#">Reservation Agent OR Transportation Ticket Agent</a>
+                    </td>
+                    <td>
+                        <p>staff</p>
+                    </td>
+                    <td>
+                        <div class="project green">
+                            <p>Enso SPA</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$1,554.00</p>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$1,258.74</p>
+                    </td>
+                    <td class="activeTd">
+                        <div class="active green">
+                            <p>&#10004</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>10-02-2015</p>
+                    </td>
+                    <td>
+                        <div class="twoIcons">
+                            <img src="./img/edit-svgrepo-com.svg">
+                            <img src="./img/delete-svgrepo-com.svg">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <p>8</p>
+                    </td>
+                    <td>
+                        <p>Lorine Trantow PhD</p>
+                    </td>
+                    <td>
+                        <a href="#">Social Scientists</a>
+                    </td>
+                    <td>
+                        <p>assistant</p>
+                    </td>
+                    <td>
+                        <div class="project yellow">
+                            <p>Webshop</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$4,872.00</p>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$3,946.32</p>
+                    </td>
+                    <td class="activeTd">
+                        <div class="active red">
+                            <p>&#10006</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>30-05-2017</p>
+                    </td>
+                    <td>
+                        <div class="twoIcons">
+                            <img src="./img/edit-svgrepo-com.svg">
+                            <img src="./img/delete-svgrepo-com.svg">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <p>9</p>
+                    </td>
+                    <td>
+                        <p>Barry Brown</p>
+                    </td>
+                    <td>
+                        <a href="#">Gas Pumping Station Operator</a>
+                    </td>
+                    <td>
+                        <p>staff</p>
+                    </td>
+                    <td>
+                        <div class="project blue">
+                            <p>AdminLTE</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$4,986.00</p>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$4,038.66</p>
+                    </td>
+                    <td class="activeTd">
+                        <div class="active green">
+                            <p>&#10004</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>17-10-2015</p>
+                    </td>
+                    <td>
+                        <div class="twoIcons">
+                            <img src="./img/edit-svgrepo-com.svg">
+                            <img src="./img/delete-svgrepo-com.svg">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Tommie Erdman</p>
+                    </td>
+                    <td>
+                        <a href="#">Substance Abuse Social Worker</a>
+                    </td>
+                    <td>
+                        <p>assistant</p>
+                    </td>
+                    <td>
+                        <div class="project blue">
+                            <p>AdminLTE</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$3,109.00</p>
+                    </td>
+                    <td>
+                        <p class="dollarBaby">$2,518.29</p>
+                    </td>
+                    <td class="activeTd">
+                        <div class="active green">
+                            <p>&#10004</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>22-12-2015</p>
+                    </td>
+                    <td>
+                        <div class="twoIcons">
+                            <img src="./img/edit-svgrepo-com.svg">
+                            <img src="./img/delete-svgrepo-com.svg">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>Total</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><b>$330,237,682.00</b></td>
+                    <td><b>$267,492,522.42</b></td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="sameThing bottom">
+            <div class="num">
+                <p>From 1 to 10 of 100000 entries (filtered from 100000 total records)</p>
+            </div>
+            <div class="pages">
+                <div class="page selectedPage"><p>1</p></div>
+                <div class="page"><p>2</p></div>
+                <div class="page"><p>3</p></div>
+                <div class="page"><p>4</p></div>
+                <p class="points">...</p>
+                <div class="page">10000</div>
+                <div class="previous notAbleToClick"><p>Previous</p></div>
+                <div class="page next"><P>Next</P></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
